@@ -11,4 +11,4 @@ RUN comfy model download --url https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_
 RUN comfy model download --url https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_s2v_14B_fp8_scaled.safetensors --relative-path models/diffusion_models --filename wan2.2_s2v_14B_fp8_scaled.safetensors
 
 # copy all input data (like images or videos) into comfyui (uncomment and adjust if needed)
-# COPY input/ /comfyui/input/
+COPY input/ /comfyui/input/
